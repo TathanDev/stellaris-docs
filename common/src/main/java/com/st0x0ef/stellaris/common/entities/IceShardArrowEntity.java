@@ -1,5 +1,6 @@
 package com.st0x0ef.stellaris.common.entities;
 
+import com.st0x0ef.stellaris.Stellaris;
 import com.st0x0ef.stellaris.common.registry.EntityRegistry;
 import com.st0x0ef.stellaris.common.registry.ItemsRegistry;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -32,6 +33,8 @@ public class IceShardArrowEntity extends AbstractArrow {
         Entity entity = entityHitResult.getEntity();
         if (entity instanceof LivingEntity livingEntity) {
             livingEntity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 150));
+            livingEntity.setIsInPowderSnow(true);
+            Stellaris.LOG.error("Entity hit: " + livingEntity.isInPowderSnow);
         }
     }
 

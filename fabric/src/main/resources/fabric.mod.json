@@ -15,6 +15,9 @@
     ],
     "client": [
       "com.st0x0ef.stellaris.fabric.client.StellarisFabricClient"
+    ],
+    "rei_client": [
+      "com.st0x0ef.stellaris.common.integration.rei.StellarisREIClient"
     ]
   },
   "mixins": [

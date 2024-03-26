@@ -158,5 +158,4 @@ public class FlagBlock extends Block implements SimpleWaterloggedBlock {
         p_49915_.add(HALF, FACING, WATERLOGGED);
     }
 
-    PowderSnowBlock
 }

@@ -32,7 +32,9 @@ subprojects {
         // The following line declares the mojmap mappings, you may use other mappings as well
         mappings loom.officialMojangMappings()
         if(!isCommon) {
-            modImplementation("me.shedaniel:RoughlyEnoughItems-${modLoader}:14.0.688")
+            modRuntimeOnly "me.shedaniel:RoughlyEnoughItems-${modLoader}:14.0.688"
+        } else {
+            modCompileOnly "me.shedaniel:RoughlyEnoughItems-api:14.0.688"
 
         }
 
